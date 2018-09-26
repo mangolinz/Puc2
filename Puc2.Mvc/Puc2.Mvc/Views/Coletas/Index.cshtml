@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Puc2.Modelo.ColetaView>
+
+@{
+    ViewBag.Title = "Pedido de Coleta";
+}
+
+<h2>Pedido de Coleta</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar Pedido de Coleta", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EndereRetirada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EnderecoEntrega)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndereRetirada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnderecoEntrega)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.idPedidoColeta }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.idPedidoColeta }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.idPedidoColeta })
+            </td>
+        </tr>
+    }
+
+</table>

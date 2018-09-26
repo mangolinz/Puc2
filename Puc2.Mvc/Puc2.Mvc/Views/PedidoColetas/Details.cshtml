@@ -1,0 +1,90 @@
+﻿@model Puc2.Modelo.PedidoColetaView
+
+@{
+    ViewBag.Title = "Dados do Pedido de Coleta";
+}
+
+<h2>Dados do Pedido de Coleta</h2>
+
+<div>
+    <h4>Pedido de Coleta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnderecoCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnderecoCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefoneCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefoneCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LarguraEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LarguraEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlturaEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlturaEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndereRetirada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndereRetirada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnderecoEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnderecoEntrega)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Alterar", "Edit", new { id = Model.idPedidoColeta }) |
+    @Html.ActionLink("Voltar para lista", "Index")
+</p>

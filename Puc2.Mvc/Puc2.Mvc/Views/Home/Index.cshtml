@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Transportes XPTO</h1>
+    <p class="lead">Portal desenvolvído para validação do conceito arquitetural da proposta de um sistema de gestão de logística.</p>
+    <p class="lead">Projeto arquitetural proposto pelo TCC do curso : Especialização em Arquitetura de Software Distribuído.</p>
+    <p class="lead">Aluno: Marcelo Mangolin Zampereti.</p>
+    <p><a href="https://www.linkedin.com/in/marcelo-mangolin-06623624" class="btn btn-primary btn-lg" target="_blank">Linkedin Marcelo &raquo;</a></p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Conceitos arquiteturais defendidos neste projeto.</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Acesso por multi-plataforma</h2>
+        <p>
+            Este conceito visa representar a solução adotada para visualização em diversos dispositivos com telas de tamanhos diversos.
+            O portal deve se adequar as dimensões do dispositivo que o utiliza, ajustando tamanhos de fontes, posicionamento de informações
+            de uma forma que fique legível e de fácil acesso em qualquer dispositivo.
+        </p>
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Cadastro de Coleta", "Index", "Coletas")</li>
+        </ul>
+        <ul class="btn btn-default">
+            <li>@Html.ActionLink("Cadastro de Coleta >>", "Index", "Coletas")</li>
+        </ul>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Segurança no acesso ao portal</h2>
+        <p>O portal prevê a utilização do Microsoft Identity fornecido pelo próprio Azure, garantindo estrutura mínima e robusta de controle de acesso.</p>
+        <p>Todo acesso as páginas do portal somente será permitido após o devido cadastro e login efetuado.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Fácil evolução de aplicativo</h2>
+        <p>O portal foi desenvolvido com a solução Microsoft C# usando frameworks de ultima geração, consolidados e de fácil conehcimento do mercado:</p>
+        <p>-C#/VisualStudio, linguagem e IDE largamente conhecida pela comunidade de desenvolvedores.</p>
+        <p>-MVC, framework que fornece separação de Visualização, Dados e Controle, de fácil adequação e evolução. </p>
+        <p>-Angular, framework que fornece padronização de identidade visual, que premite rápida reconfiguração de parametros visual do portal.</p>
+        <p>-SQLServe, banco de dados fortemente conhecido pela comunidade de desenvolvedores, com possibilidade de manutenção, cerscimento e migração.</p>
+        <p>-Azure, ambiente de gestão e hopedagem na nuvem que garante o funcionamento, disponibilidade, flexibilidade, evolução e suporte 24x7 do aplicativo desenvolvído.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>

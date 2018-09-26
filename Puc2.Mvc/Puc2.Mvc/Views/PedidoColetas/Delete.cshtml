@@ -1,0 +1,96 @@
+﻿@model Puc2.Modelo.PedidoColetaView
+
+@{
+    ViewBag.Title = "Excluir Pedido de Coleta";
+}
+
+<h2>Dados do Pedido de Coleta</h2>
+
+<h3>Tem certeza que você quer excluir?</h3>
+<div>
+    <h4>Pedido de Coleta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnderecoCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnderecoCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefoneCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefoneCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LarguraEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LarguraEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlturaEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlturaEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoEncomenda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoEncomenda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndereRetirada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndereRetirada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnderecoEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnderecoEntrega)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar para lista", "Index")
+        </div>
+    }
+</div>

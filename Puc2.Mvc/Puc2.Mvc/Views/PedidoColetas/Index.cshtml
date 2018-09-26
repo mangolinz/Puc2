@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Puc2.Modelo.PedidoColetaView>
+
+@{
+    ViewBag.Title = "Lista de Pedido de Coleta";
+}
+
+<h2>Lista de Pedido de Coleta</h2>
+
+<p>
+    @Html.ActionLink("Cadatrar novo", "Create")
+</p>
+<table class="table table-responsive">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCliente)
+        </th>
+        <th class="hidden-xs">
+            @Html.DisplayNameFor(model => model.EnderecoCliente)
+        </th>
+        <th class="hidden-xs">
+            @Html.DisplayNameFor(model => model.TelefoneCliente)
+        </th>
+        <th >
+            @Html.DisplayNameFor(model => model.LarguraEncomenda)
+        </th>
+        <th class="hidden-xs">
+            @Html.DisplayNameFor(model => model.AlturaEncomenda)
+        </th>
+        <th class="hidden-xs">
+            @Html.DisplayNameFor(model => model.ProfEncomenda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PesoEncomenda)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndereRetirada)
+        </th>
+        <th class="hidden-xs">
+            @Html.DisplayNameFor(model => model.EnderecoEntrega)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeCliente)
+        </td>
+        <td class="hidden-xs">
+            @Html.DisplayFor(modelItem => item.EnderecoCliente)
+        </td>
+        <td class="hidden-xs">
+            @Html.DisplayFor(modelItem => item.TelefoneCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LarguraEncomenda)
+        </td>
+        <td class="hidden-xs">
+            @Html.DisplayFor(modelItem => item.AlturaEncomenda)
+        </td>
+        <td class="hidden-xs">
+            @Html.DisplayFor(modelItem => item.ProfEncomenda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PesoEncomenda)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndereRetirada)
+        </td>
+        <td class="hidden-xs">
+            @Html.DisplayFor(modelItem => item.EnderecoEntrega)
+        </td>
+        <td>
+            @Html.ActionLink("Alterar", "Edit", new { id=item.idPedidoColeta }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.idPedidoColeta }) |
+            @Html.ActionLink("Excluir", "Delete", new { id=item.idPedidoColeta })
+        </td>
+    </tr>
+}
+
+</table>
