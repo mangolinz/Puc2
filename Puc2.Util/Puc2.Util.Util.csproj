@@ -47,7 +47,11 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Videos\POC_RNF01_V1.rar" />
+    <None Include="Videos\POC_RNF02_V1.rar" />
+    <None Include="Videos\Poc_RNF03_V1.rar" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Videos\Diagrama2.png" />
   </ItemGroup>
